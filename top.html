@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<title>純喫茶キタキュウ</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <button class="menubtn">
+    <span></span>
+    <span></span>
+    <span>MENU</span>
+  </button>
+
+  <div class="wrapper book"><!--背景の本-->
+    <aside class="left"><!--本の左側-->
+      <!--メニュー-->
+      <nav class="grobalnav">
+        <h2>MENU</h2>
+        <dl>
+          <dt>MORNING</dt>
+          <dd><a href="top.html#Information">Information</a></dd>
+          <dd><a href="top.html#about">About</a></dd>
+          <dt>LUNCH</dt>
+          <dd><a href="story.html
+
+            ">純喫茶について</a></dd>
+          <dd><a href="story.html">純喫茶の魅力</a>
+          </dd>
+          <dd><a href="story.html">北九州市の純喫茶紹介</a>
+
+              <dt>DESERT</dt>
+            <dd><a href="link.html#thanks">参考</a></dd>
+            <a href="index.html"><i class="fas fa-stroopwafel"></i></a>
+          </dl>
+      </nav><!--メニューここまで-->
+      <!--クレジット-->
+      <small>&copy; 20xx YourSiteName.Design by <a href="https://utsusemi.hiroec.com/">Utsusemi</a>.</small><!--クレジットここまで-->
+    </aside><!--本の左側ここまで-->
+
+    <main><!--本の右側-->
+      <!--コンテンツ-->
+      <article id="Information">
+        <h2>Information</h2>
+        <section class="news">
+          <h3>News</h3>
+          <div class="box">
+            <ul>
+              <li>
+                <time>2023/06/30</time>
+                <span>純喫茶キタキュウ　開設</span>
+              </li>
+              <li>
+                <time>2023/06/30</time>
+                <span>純喫茶について</span>
+              </li>
+              <li>
+                <time>2023/06/30</time>
+                <span>北九州市の純喫茶紹介</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article><!--Informationここまで-->
+
+      <article id="about">
+        <h2>About</h2>
+
+          <h3>About this site</h3>
+          <p>年々古き良き純喫茶文化が減少している。皆の純喫茶へいってみようのきっかけを作るために、純喫茶の魅力等について発信していきます。
+          また、純喫茶と同様に、人口が全国で一番減少し続けている北九州市の純喫茶も紹介していきます。</p>
+
+          <div class="hr"></div>
+
+          <h3>About Link</h3>
+          <dl class="table">
+            <dt class="marker">Site name</dt><dd>純喫茶　キタキュウ</dd>
+            <dt class="marker">Master</dt><dd>宮﨑あゆ</dd>
+            <dt class="marker">URL</dt><dd>https://design.kyusan-u.ac.jp/socialdesign/?SocialDesign</dd>
+          </dl>
+
+          <div class="hr"></div>
+
+          <h3>Supplement</h3>
+          <div class="box kiji">
+            <div class="wrapper">
+
+
+
+              <time></time>
+            </div>
+            <p>喫茶店とカフェの違いは主に<strong>二つ</strong>あります。<br>
+              <strong>1法律上の営業許可の種類</strong><br>
+              純喫茶・喫茶店・カフェは、いずれも開業するにあたり、行政（保健所）に営業許可の申請が必要です。</p>
+
+        <p>  <strong>純喫茶・喫茶店</strong>・・・「喫茶店営業許可」<br>
+            <strong>カフェ</strong>・・・「飲食店営業許可」</p>
+
+            <p><strong>2提供できるメニューの違い</strong><br>
+            前述のとおり、営業許可の種類が異なると、提供可能なメニューも異なります。</p>
+
+            <p>  <strong>「喫茶店営業許可」</strong>・・・な加熱調理で作る料理のみ提供を許可されている。<br>
+                <strong>「飲食店営業許可」</strong>・・・酒の提供ができることに加え、手の込んだ料理も提供できる。</p>
+
+            <p style="color:red">ただし、営業許可の種類と店名が一致するとは限りません。例えば、「◯◯カフェ」という店名であっても、喫茶店営業許可を取得している場合もありますし、「○○喫茶」という店名でも、飲食店営業許可を取得してお酒や手の込んだ料理を提供している場合もあります。</p>
+          </div>
+
+      </article><!--コンテンツここまで-->
+    </main><!--本の右側ここまで-->
+  </div>
+
+<!--jQuery 読込-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+<!-- スマホメニュー用 -->
+  <script type="text/javascript">
+    $(function() {
+      $('.menubtn').click(function() {
+        $(this).toggleClass('active');
+        $(".left").fadeToggle();
+      });
+    });
+  </script><!-- スマホメニュー用ここまで -->
+
+</body>
+</html>

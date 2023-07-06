@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<title>純喫茶　キタキュウ</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="index">
+  <p  class="comment">いらっしゃいませ</p>
+  <!--センスなくてすいません。。素敵な歓迎コメントつけてください。。
+        id=curve を削除すると、まっすぐに表示されます。
+        文が長い場合はカーブさせない方が良いかもしれません。-->
+  <div class="bookcover">
+    <a href="top.html">
+      <img src="img/book.png" alt="本のアイコン">
+      <h1></h1>
+    </a>
+
+  </div>
+  <p>ごゆっくりお過ごしください</p>
+</div>
+
+<!--jQuery 読込-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.arctext.js" type="text/javascript"></script>
+
+<!--文字カーブ-->
+<script type="text/javascript">
+   $('#curve').arctext({radius: 250});
+</script>
+
+</body>
+</html>

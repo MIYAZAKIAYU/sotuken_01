@@ -1,0 +1,81 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/コンテンツ.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>純喫茶　キタキュウ</title>
+<!-- InstanceEndEditable -->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <button class="menubtn">
+    <span></span>
+    <span></span>
+    <span>MENU</span>
+  </button>
+
+  <div class="wrapper book"><!--背景の本-->
+    <aside class="left"><!--本の左側-->
+      <!--メニュー-->
+      <nav class="grobalnav">
+        <h2>MENU</h2>
+        <dl>
+          <dt>MORNING</dt>
+          <dd><a href="top.html#infomation">Infomation</a></dd>
+          <dd><a href="top.html#about">About</a></dd>
+          <dt>LUNCH</dt>
+          <dd><a href="story.html">純喫茶について</a></dd>
+          <dd><a href="story.html">純喫茶の魅力</a>
+          </dd>
+          <dd><a href="story.html">北九州市の純喫茶紹介</a>
+              <dt>DESERT</dt>
+            <dd><a href="link.html#thanks">参考</a></dd>
+            <a href="index.html"><i class="fas fa-stroopwafel"></i></a>
+      </nav><!--メニューここまで-->
+      <!--クレジット-->
+      <small>&copy; 20xx YourSiteName.Design by <a href="https://utsusemi.hiroec.com/">Utsusemi</a>.</small><!--クレジットここまで-->
+    </aside><!--本の左側ここまで-->
+
+    <main><!--本の右側-->
+      <!--コンテンツ-->
+      <!-- InstanceBeginEditable name="コンテンツ" -->
+      <article>
+        <h2>参考</h2>
+        <section id="thanks">
+          <h3>Thanks</h3>
+            <dl class="linklist2 table">
+            <dt class="marker"><a href="https://kurahiro.tepco.co.jp/media/odekake/14940/index.html">暮らしを豊かにするメディア</a></dt><dd>純喫茶とは？「純」の意味、喫茶店・カフェとの違いを解説！</dd>
+          <dt class="marker"><a href="https://www.itmedia.co.jp/business/articles/2201/25/news066.html">
+スピン経済の歩き方</a></dt><dd>喫茶店数は30年で半減！　「純喫茶」はこのまま絶滅してしまうのか</dd>
+            <dt class="marker"><a href="https://hiroec.com/">空蝉template</a></dt><dd>テンプレート</dd>
+          </ul>
+        </section>
+      </article>
+      <!-- InstanceEndEditable -->
+      <!--コンテンツここまで-->
+    </main><!--本の右側ここまで-->
+  </div>
+
+<!--jQuery 読込-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+  <!-- スマホメニュー用 -->
+  <script type="text/javascript">
+    $(function() {
+      $('.menubtn').click(function() {
+        $(this).toggleClass('active');
+        $(".left").fadeToggle();
+      });
+    });
+  </script><!-- スマホメニュー用ここまで -->
+
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/コンテンツ.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>純喫茶キタキュウ</title>
+<!-- InstanceEndEditable -->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <button class="menubtn">
+    <span></span>
+    <span></span>
+    <span>MENU</span>
+  </button>
+
+  <div class="wrapper book"><!--背景の本-->
+    <aside class="left"><!--本の左側-->
+      <!--メニュー-->
+      <nav class="grobalnav">
+        <h2>MENU</h2>
+        <dl>
+          <dt>MORING</dt>
+          <dd><a href="top.html#infomation">Infomation</a></dd>
+          <dd><a href="top.html#about">About</a></dd>
+          <dt>LUNCH</dt>
+          <dd><a href="story.html">純喫茶について</a></dd>
+          <dd><a href="story.html">純喫茶の魅力</a>
+
+          </dd>
+          <dd><a href="story.html">北九州市の純喫茶紹介</a>
+            <dt>DESERT</dt>
+          <dd><a href="link.html#thanks">参考</a></dd>
+          <a href="index.html"><i class="fas fa-stroopwafel"></i></a>
+      </nav><!--メニューここまで-->
+      <!--クレジット-->
+      <small>&copy; 20xx YourSiteName.Design by <a href="https://utsusemi.hiroec.com/">Utsusemi</a>.</small><!--クレジットここまで-->
+    </aside><!--本の左側ここまで-->
+
+    <main><!--本の右側-->
+      <!--コンテンツ-->
+      <!-- InstanceBeginEditable name="コンテンツ" -->
+      <article>
+        <h2>Sample</h2>
+        <h2>&lt;h2&gt;Sample</h2>
+        <h3>&lt;h3&gt;Sample</h3>
+        <h4>&lt;h4&gt;Sample</h4>
+        <small>※&lt;article&gt;の中のh2は真ん中寄せになります。</small>
+
+        <div class="hr"></div>
+
+        <div class="box">
+        class="box"をdivなどにいれると上下に罫線がひかれます。
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="box kiji">
+          <div class="wrapper">
+            <h4 class="marker">記事タイトル</h4>
+            <time>2019/11/12</time>
+           </div>
+           <p>タイトル付きの記事を作るときは、このセットを参考にしてください。<br>
+              日付は削除しても大丈夫です。</p>
+        </div>
+
+        <div class="hr"></div>
+
+        <p>dlリストなどにclass="table"をつけ、中に項目と内容をならべると表になります。項目にclass="marker"をつけるとマーカーっぽく背景色が付きます。</p>
+        <dl class="table">
+          <dt>項目１</dt><dd>項目１の内容</dd>
+          <dt class="marker">項目２</dt><dd>項目２の内容</dd>
+        </dl>
+
+        <div class="hr"></div>
+        <small>からのdivにclass="hr"をつけると、仕切りのマークが入ります。</small>
+
+        <div class="hr"></div>
+
+        <textarea class="box" cols="30" rows="6">テキストエリアも、class="box"をつけると、上下に罫線がつきます。</textarea>
+        <button class="btn">ボタン</button>
+
+      </article>
+      <!-- InstanceEndEditable -->
+      <!--コンテンツここまで-->
+    </main><!--本の右側ここまで-->
+  </div>
+
+<!--jQuery 読込-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+  <!-- スマホメニュー用 -->
+  <script type="text/javascript">
+    $(function() {
+      $('.menubtn').click(function() {
+        $(this).toggleClass('active');
+        $(".left").fadeToggle();
+      });
+    });
+  </script><!-- スマホメニュー用ここまで -->
+
+
+</body>
+<!-- InstanceEnd --></html>
